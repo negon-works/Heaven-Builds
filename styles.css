@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid white;
+  color: #111;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  max-width: 420px;
+  font-size: 16px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+/* Portfolio */
+.portfolio {
+  margin-bottom: 100px;
+}
+
+.portfolio h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 350px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* Contact */
+.contact {
+  padding-bottom: 100px;
+}
+
+.contact h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  max-width: 500px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    gap: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
