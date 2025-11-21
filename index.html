@@ -57,5 +57,25 @@
     <h2>CONTACT</h2>
     <p>Get in touch to discuss your next project or collaboration.</p>
   </section>
+
+  <script>
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  mobileNav.classList.toggle("open");
+});
+
+// Close menu when link clicked
+document.querySelectorAll(".mobile-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    mobileNav.classList.remove("open");
+  });
+});
+</script>
+
 </body>
 </html>
+
