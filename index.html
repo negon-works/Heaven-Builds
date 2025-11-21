@@ -8,18 +8,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <h1>HAVEN<br>BUILDS</h1>
-    </div>
-    <nav class="nav">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#portfolio">PORTFOLIO</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-  </header>
+ <header class="header">
+  <div class="logo">
+    <h1>HAVEN<br>BUILDS</h1>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav class="nav">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</header>
 
   <!-- Hero -->
   <section id="home" class="hero">
@@ -78,4 +94,5 @@ document.querySelectorAll(".mobile-nav a").forEach(link => {
 
 </body>
 </html>
+
 
